@@ -8,8 +8,8 @@
     
     <body>
         <form action="">
-            <table align="center">
-                <tr style="border: 1px; border-style: solid;" cellspacing="0">
+            <table align="center" style="border: 1px solid;">
+                <tr>
                     <th style="color: white;" bgcolor="#0000ff" colspan="2">FORM PENDAFTARAN OSIS</th>
                 </tr>
                 
@@ -30,34 +30,69 @@
 
                 <tr>
                     <td>Jenis Kelamin</td>
+                    <td>
+                        <label for="m">Laki-Laki</label>
+                        <input type="radio" id="m" name="gender">
+                        <label for="f">Perempuan</label>
+                        <input type="radio" id="f" name="gender">
+                    </td>
                 </tr>
 
                 <tr>
                     <td>Nomor Telepon</td>
+                    <td><input type="tel" placeholder="Telepon"></td>
                 </tr>
 
                 <tr>
                     <td>Jurusan</td>
+                    <td>
+                        <label for="ipa">IPA</label>
+                        <input type="radio" id="ipa" name="major">
+                        <label for="ips">IPS</label>
+                        <input type="radio" id="ips" name="major">
+                        <label for="bhs">Bahasa</label>
+                        <input type="radio" id="bhs" name="major">
+                    </td>
                 </tr>
 
                 <tr>
                     <td>Agama</td>
+                    <td>
+                        <select>
+                            <option>Islam</option>
+                            <option>Kristen</option>
+                            <option>Katolik</option>
+                            <option>Hindu</option>
+                            <option>Buddha</option>
+                            <option>Kong Hu Cu</option>
+                        </select>
+                    </td>
                 </tr>
 
                 <tr>
                     <td>Hobi</td>
+                    <td>
+                        <label for="read">Membaca Buku</label>
+                        <input type="checkbox" id="read" name="hobby">
+                        <label for="write">Menulis</label>
+                        <input type="checkbox" id="write" name="hobby">
+                        <label for="other">dll</label>
+                        <input type="checkbox" id="other" name="hobby">
+                    </td>
                 </tr>
 
                 <tr>
                     <td>Alasan Motivasi untuk mendaftar</td>
+                    <td><textarea rows="10" cols="34"></textarea></td>
                 </tr>
 
                 <tr>
                     <td>Foto 3x4</td>
+                    <td><input type="file" name="pic"></td>
                 </tr>
 
                 <tr>
-                    <td align="center">
+                    <td align="center" colspan="2">
                         <input type="submit" value="Daftar">
                         <input type="reset" value="Reset">
                     </td>
